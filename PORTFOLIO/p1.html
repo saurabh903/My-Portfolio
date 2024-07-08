@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #2F3645;
+            color: #EEEDEB;
+            font-family: poppins;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: #939185;
+            font-size: 35px;
+        }
+
+        nav button{
+            background-color: #E6B9A6;
+            font-family: poppins;
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .second {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .second h1 {
+            font-size: 2rem;
+            margin-top: 75px;
+            margin-bottom: 0px;
+        }
+
+        .grey {
+            color: grey;
+        }
+
+        .third p {
+            font-size: 20px;
+            margin-top: 20px;
+            /* word-spacing: 20px;
+    letter-spacing: 2px; */
+        }
+
+        .fourth .working img {
+            border: 5px solid black;
+            border-radius: 10px;
+            width: 500px;
+            margin-top: 25px;
+        }
+
+        .fourth .working {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        footer {
+            background-color: #939185;
+        }
+
+        .foot {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .three li{
+            list-style: none;
+            font-size: 30px;
+            margin-right: 35px;
+            margin-top: 15px;
+        }
+
+        .three li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Project- CRUD Application</h1>
+        </div>
+        <a href="https://github.com/saurabh903/CRUD-APPLICATION" target="_blank"><button>View Source</button></a>
+    </nav>
+
+    
+
+    <section class="second , third" style="height: 400px;">
+        <h1>
+            About Project
+        </h1>
+        <span class="grey">WhaT iT Is</span>
+        <div class="blue">
+            <p>A CRUD application is a software that performs basic operations—Create, Read, Update, and Delete—on data
+                stored in a database. CRUD operations are fundamental in managing data in various applications, ranging
+                from web services to desktop programs. In a CRUD application, the "Create" function allows users to add
+                new records, "Read" retrieves data, "Update" modifies existing records, and "Delete" removes data. These
+                applications typically interact with a database using SQL or an ORM (Object-Relational Mapping)
+                framework. CRUD applications are essential for data management in systems like content management
+                systems, customer relationship management software, and online retail platforms. By providing a standard
+                approach to data handling, CRUD applications enhance efficiency, consistency, and reliability in data
+                management processes. They form the backbone of many modern software solutions, ensuring that data can
+                be efficiently accessed and manipulated as needed.</p>
+        </div>
+    </section>
+    <section class="second , third" style="height: 250px;">
+        <h1>
+            Tool Used
+        </h1>
+        <span class="grey">WhaT tO uSe</span>
+        <div class="blue">
+            <p>-The project of CRUD application built with Java and MySQL, enabling users to Create, Read,Update, and
+                Delete records in a database.</p>
+            <p>-It features a user-friendly interface, robust backend processing with Java, and efficient datamanagement
+                with MySQL, ensuring seamless interaction with stored data.</p>
+        </div>
+    </section>
+    <section class="second , third , fourth" style="height: 1000px;">
+        <h1>
+            Screenshots
+        </h1>
+        <span class="grey">hoW iT LooKs</span>
+        <div class="working">
+            <img src="screenshots/s1.png" alt="">
+            <img src="screenshots/s4.png" alt="">
+            <img src="screenshots/s2.png" alt="">
+            <img src="screenshots/s3.png" alt="">
+        </div>
+    </section>
+    <footer style="height: 250px;">
+        <div class="foot">
+            <lord-icon src="https://cdn.lordicon.com/kjtalhau.json" trigger="hover" style="width:250px;height:250px">
+            </lord-icon>
+            <div class="three">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Project</a></li>
+                    <li><a href="form.html" target="_blank">Contact Me</li></a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</body>
+
+</html>

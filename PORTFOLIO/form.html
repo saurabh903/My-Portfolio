@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(#003135, #03838f);
+            height: 44.2vw;
+            font-family: poppins;
+        }
+
+        .heading h1 {
+            font-size: 35px;
+            color: aliceblue;
+        }
+
+        .heading hr{
+            width: 120px;
+            border: none;
+            height: 5px;
+            background-color: wheat;
+            margin-bottom: 10px;
+            text-align: left;
+            margin-left: 0px;
+            margin-top:-15px ;
+            margin-bottom: 50px;
+            
+        }
+
+        .form {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .left{
+            margin-top: 70px;
+        }
+
+        .right {
+            margin-top: 125px;
+        }
+
+        form input {
+            font-size: 20px;
+            height: 40px;
+            border-radius: 25px;
+        }
+
+        ::-webkit-input-placeholder {
+            padding: 10px;
+            font-size: 15px;
+            font-family: poppins;
+        }
+
+        @media (max-width:800px) {
+            .left {
+                width: 80vw;
+            }
+
+            .right {
+                display: none;
+            }
+        }
+
+        input:last-of-type{
+            display: flex;
+            align-items: center;
+            background: linear-gradient(#03838f,#003135);
+            color: white;
+            border:2px solid wheat;
+            cursor: pointer;
+            font-family: poppins;
+            font-size: 15px;
+            padding: 15px 30px;
+            gap: 100px;
+        }
+    </style>
+
+    <script>
+
+    </script>
+</head>
+
+<body>
+
+    <div class="form">
+        <div class="left">
+            <div class="heading">
+                <h1>Enquiry Form</h1>
+                <hr>
+            </div>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="305af463-d541-4d8a-8cf0-96ed7a8da4f9">
+
+                <input type="text" id="first_name" name="first_name" required placeholder="Your name"><br><br>
+
+                <input type="text" id="last_name" name="last_name" required placeholder="Your email"><br><br>
+
+                <input type="message" id="message" name="message" required placeholder="Your Message"
+                    style="height: 150px;" ><br><br>
+
+                <input type="submit" value="Submit">
+        </div>
+        <div class="right">
+            <lord-icon src="https://cdn.lordicon.com/ujxzdfjx.json" trigger="hover" style="width:450px;height:450px">
+            </lord-icon>
+        </div>
+    </div>
+    </form>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</body>
+
+</html>
